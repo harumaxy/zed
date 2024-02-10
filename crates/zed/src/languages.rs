@@ -16,6 +16,7 @@ mod deno;
 mod elixir;
 mod elm;
 mod erlang;
+mod gdscript;
 mod gleam;
 mod go;
 mod haskell;
@@ -76,6 +77,7 @@ pub fn init(
             tree_sitter_embedded_template::language(),
         ),
         ("erlang", tree_sitter_erlang::language()),
+        ("gdscript", tree_sitter_gdscript::language()),
         ("gitcommit", tree_sitter_gitcommit::language()),
         ("gleam", tree_sitter_gleam::language()),
         ("glsl", tree_sitter_glsl::language()),
@@ -158,6 +160,7 @@ pub fn init(
             })],
         ),
     }
+    language("gdscript", vec![Arc::new(gdscript::GodotLspAdapter)]);
     language("gitcommit", vec![]);
     language("erlang", vec![Arc::new(erlang::ErlangLspAdapter)]);
 

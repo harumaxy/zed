@@ -9206,6 +9206,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "tree-sitter-gdscript"
+version = "0.0.1"
+source = "git+https://github.com/PrestonKnopp/tree-sitter-gdscript?rev=03f20b94707a21bed90bb95101684bc4036139ce#03f20b94707a21bed90bb95101684bc4036139ce"
+dependencies = [
+ "cc",
+ "tree-sitter",
+]
+
+[[package]]
 name = "tree-sitter-gitcommit"
 version = "0.3.3"
 source = "git+https://github.com/gbprod/tree-sitter-gitcommit#e8d9eda4e5ea0b08aa39d48dab0f6553058fbe0f"
@@ -10838,6 +10847,7 @@ dependencies = [
  "tree-sitter-elm",
  "tree-sitter-embedded-template",
  "tree-sitter-erlang",
+ "tree-sitter-gdscript",
  "tree-sitter-gitcommit",
  "tree-sitter-gleam",
  "tree-sitter-glsl",
